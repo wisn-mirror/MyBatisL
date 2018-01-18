@@ -3,10 +3,10 @@
 <mapper namespace="com.wisn.mybatis.mapper.UserMapper">
     <!-- 自定义返回结果集 -->
     <resultMap id="userMap" type="com.wisn.mybatis.beans.UserBean">
-        <id property="id" column="id" javaType="java.lang.Integer"></id>
-        <result property="username" column="username" javaType="java.lang.String"></result>
-        <result property="password" column="password" javaType="java.lang.String"></result>
-        <result property="account" column="account" javaType="java.lang.Double"></result>
+        <id property="id" column="id" javaType="java.lang.Integer"/>
+        <result property="username" column="username" javaType="java.lang.String"/>
+        <result property="password" column="password" javaType="java.lang.String"/>
+        <result property="account" column="account" javaType="java.lang.Double"/>
     </resultMap>
     <!-- 在各种标签中的id属性必须和接口中的方法名相同 ， id属性值必须是唯一的，不能够重复使用。parameterType属性指明查询时使用的参数类型，resultType属性指明查询返回的结果集类型-->
     <!-- useGeneratedKeys：（ 仅 对 insert 有 用 ） 这 会 告 诉 MyBatis 使 用 JDBC 的getGeneratedKeys
